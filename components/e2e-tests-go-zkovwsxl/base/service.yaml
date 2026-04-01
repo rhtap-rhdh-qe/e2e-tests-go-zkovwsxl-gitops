@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: e2e-tests-go-zkovwsxl
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: e2e-tests-go-zkovwsxl 
+  name: e2e-tests-go-zkovwsxl
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: e2e-tests-go-zkovwsxl 
